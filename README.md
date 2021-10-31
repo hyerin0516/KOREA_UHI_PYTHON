@@ -14,12 +14,19 @@ deactivate 가상환경 종료
 
 install module
 > conda install cartopy
+> 
 > pip install windrose
+> 
 > conda install -c conda-forge pyhdf
+> 
 > conda install basemap 
+> 
 > conda install basemap-data-hires 
+> 
 > conda install numpy pandas matplotlib
+> 
 > conda install spyder
+> 
 > conda install spyder
 
  
