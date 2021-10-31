@@ -4,10 +4,10 @@
 > conda env list
 
 가상환경 생성하기
-> conda create -n Korea_UHI_Python_env python=3.8
+> conda create -n Korea_UHI_Python_env_win python=3.8
 
 가상환경 시작하기
-> conda activate Korea_UHI_Python_env
+> conda activate Korea_UHI_Python_env_win
 
 deactivate 가상환경 종료
 > conda deactivate
@@ -32,4 +32,4 @@ install module
 > conda env list
  
 가상환경 제거하기
-> conda env remove -n Korea_UHI_Python_env
+> conda env remove -n Korea_UHI_Python_env_win
