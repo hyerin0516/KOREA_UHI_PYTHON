@@ -1,4 +1,4 @@
-# KOREA_UHI_Python
+# Korea_UHI_Python
 
 가상환경 리스트 보기
 > conda env list
