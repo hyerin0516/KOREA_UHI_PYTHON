@@ -13,12 +13,16 @@ deactivate 가상환경 종료
 > conda deactivate
 
 install module
-> conda install numpy pandas matplotlib
-> conda install spyder 
+> conda install cartopy
+> pip install windrose
+> conda install -c conda-forge pyhdf
 > conda install basemap 
 > conda install basemap-data-hires 
-> conda install -c conda-forge pyhdf 
-> pip install cartopy (에러남, 꼭 필요한 것은 아님)
+> conda install numpy pandas matplotlib
+> conda install spyder
+> conda install spyder
+
+ 
 
 가상환경 내보내기 (export)
 > conda env export > Korea_UHI_Python_env_win.yaml
