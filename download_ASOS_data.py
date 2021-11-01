@@ -74,10 +74,10 @@ for j in range(0, 1):
     print ('starting download %s*10 - pages ++++++++++\n' % (start))
 
 for ii in range(start, 5000):
-    for i in range(3, 13):
-        if i > 3 :
+    for i in range(1, 11):
+        if i > 1 :
             # 페이지로 이동
-            next_page=driver.find_element_by_css_selector('#wrap_content > div.wrap_itm.area_data > div.cont_itm > div.ft_lst > div.wrap_paging > ul > li:nth-child({}) > a'.format(str(i)))
+            next_page=driver.find_element_by_css_selector('#wrap_content > div.wrap_itm.area_data > div.cont_itm > div.ft_lst > div.wrap_paging > ul > li:nth-child({}) > a'.format(str(i+2)))
             next_page.click()
             sleep(1)
         
@@ -86,6 +86,7 @@ for ii in range(start, 5000):
         #next_page=driver.find_element_by_css_selector('#content > div.boardWrap > div > div.pagination.pagination-small > ul > li:nth-child(%s) > a' %(i+2))
         #next_page.click()
         #sleep(1)
+        
         
         #check=driver.find_element_by_id('checkAll')
         check_all = driver.find_element_by_css_selector('#checkAll')
