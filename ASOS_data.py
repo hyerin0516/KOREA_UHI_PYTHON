@@ -16,6 +16,7 @@ base_dr = 'SURFACE_ASOS_data/'
 #해당 지점 파일 목록읽기
 fullnames = sorted(glob(os.path.join(base_dr, '*_100_MI*.zip')))
 print("fullnames : {}".format(fullnames))
+print("len(fullnames) : {}".format(len(fullnames)))
 
 # 빈 DataFrame 생성
 df = pd.DataFrame()
@@ -31,3 +32,12 @@ for fullname in fullnames[:] :
 
 print("df\n {}".format(df))
 print("len(df): {}".format(len(df)))
+
+#
+df['dt_YmdHM'] = pd.to_datetime(df['일시'])
+
+from datetime import timedelta
+df['dt_YmdHM-1min'] = df['dt_YmdHM'] - timedelta(minutes = 1)
+df.index = df['dt_YmdHM-1min']
+
+print("df\n {}".format(df))
